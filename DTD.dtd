@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE league_players [
+<!ELEMENT league_players  ( player+ )>
+<!ELEMENT player  ( nickname , real_name , date_of_birth , favourite_post , number_of_friends_in_friendlist , Signature_text , gender , age , height , weight , hometown , family , favorite_champion , champs , favorite_league , experience+ , newbie , paysafe , server , language , skins , insult , status , internet_connection , provider )>
+<!ATTLIST player
+id CDATA #REQUIRED
+>
+<!ELEMENT provider  ( #PCDATA )>
+<!ELEMENT internet_connection  ( #PCDATA )>
+<!ELEMENT status  ( #PCDATA )>
+<!ELEMENT insult  ( #PCDATA )>
+<!ELEMENT skins  ( #PCDATA )>
+<!ELEMENT language  ( #PCDATA )>
+<!ATTLIST language
+type_language CDATA #REQUIRED
+>
+<!ELEMENT server  ( #PCDATA )>
+<!ELEMENT paysafe  ( #PCDATA )>
+<!ELEMENT newbie  ( #PCDATA )>
+<!ELEMENT experience  ( #PCDATA )>
+<!ATTLIST experience
+type_experience CDATA #REQUIRED
+>
+<!ELEMENT favorite_league  ( #PCDATA )>
+<!ELEMENT champs  ( rank+ )>
+<!ATTLIST champs
+champs_type CDATA #REQUIRED
+id_champ CDATA #REQUIRED
+>
+<!ELEMENT rank  ( #PCDATA )>
+<!ATTLIST rank
+season CDATA #REQUIRED
+episode CDATA #REQUIRED
+league CDATA #REQUIRED>
+<!ELEMENT favorite_champion ( #PCDATA )>
+<!ATTLIST favorite_champion champion CDATA #REQUIRED>
+<!ELEMENT family ( name+ )>
+<!ELEMENT name  ( #PCDATA )>
+<!ATTLIST name name_family CDATA #REQUIRED>
+<!ELEMENT hometown  ( state , city , street , house_number , city_number , zip_code )>
+<!ATTLIST hometown type_hometown CDATA #REQUIRED>
+<!ELEMENT zip_code ( #PCDATA )>
+<!ELEMENT city_number ( #PCDATA )>
+<!ELEMENT house_number  ( #PCDATA )>
+<!ELEMENT street  ( #PCDATA )>
+<!ELEMENT city  ( #PCDATA )>
+<!ELEMENT state  ( #PCDATA )>
+<!ELEMENT weight  ( #PCDATA )>
+<!ELEMENT height  ( #PCDATA )>
+<!ELEMENT age  ( #PCDATA )>
+<!ELEMENT gender  ( #PCDATA )>
+<!ELEMENT Signature_text  ( #PCDATA )>
+<!ELEMENT number_of_friends_in_friendlist  ( #PCDATA )>
+<!ELEMENT favourite_post  ( #PCDATA )>
+<!ELEMENT date_of_birth  ( #PCDATA )>
+<!ELEMENT real_name  ( #PCDATA )>
+<!ELEMENT nickname  ( #PCDATA )>
+]>
+<league_players>
+  <player id="1">
+    <nickname>Ocarina</nickname>
+    <real_name>Christopher Grunz</real_name>
+    <date_of_birth>1989-09-20</date_of_birth>
+    <favourite_post>top</favourite_post>
+    <number_of_friends_in_friendlist>29</number_of_friends_in_friendlist>
+    <Signature_text>I am lame</Signature_text>
+    <gender>man</gender>
+    <age>25</age>
+    <height>168 cm</height>
+    <weight>90 Kg</weight>
+    <hometown type_hometown="permanent">
+      <state>Germany</state>
+      <city>Koln</city>
+      <street>Ludvigstrabe</street>
+      <house_number>201</house_number>
+      <city_number>10</city_number>
+      <zip_code>74010</zip_code>
+    </hometown>
+    <family>
+      <name name_family="father">Hans Grunz </name>
+      <name name_family="mother">Keinke Grunz</name>      
+    </family>
+    <favorite_champion champion="snake">Snakelord</favorite_champion>
+    <champs champs_type="middle" id_champ="101">
+      <rank season="1" episode="1" league="bronze">1</rank>
+       <rank season="1" episode="1" league="silver">2</rank>
+    </champs>
+    <favorite_league>diamond</favorite_league>
+    <experience type_experience="feeding">No</experience>
+    <experience type_experience="flaming">No</experience>
+    <newbie>yes</newbie>
+    <paysafe>No</paysafe>
+    <server>europe</server>
+    <language type_language="main">german</language>
+    <skins>No</skins>
+    <insult>Hitler</insult>
+    <status>offline</status>
+    <internet_connection>wireless</internet_connection>
+    <provider>T-mobile</provider>  
+  </player>
+
+  <player id="2">
+    <nickname>Bosnjo</nickname>
+    <real_name>Dante Krkic</real_name>
+    <date_of_birth>1994-11-15</date_of_birth>
+    <favourite_post>middle</favourite_post>
+    <number_of_friends_in_friendlist>68</number_of_friends_in_friendlist>
+    <Signature_text>I hate spanish</Signature_text>
+    <gender>man</gender>
+    <age>17</age>
+    <height>166 cm</height>
+    <weight>70 Kg</weight>
+    <hometown type_hometown="temporary">
+      <state>Serbia</state>
+      <city>Novi Sad</city>
+      <street>Knez Mihailova</street>
+      <house_number>141a</house_number>
+      <city_number>7</city_number>
+      <zip_code>31203</zip_code>
+    </hometown>
+    <family>
+      <name name_family="father">Janko Krkic</name>
+      <name name_family="mother">Manuela Krkic</name>      
+    </family>
+    <favorite_champion champion="drake">Dragonlord</favorite_champion>
+    <champs champs_type="top" id_champ="101">
+      <rank season="2" episode="1" league="silver">2</rank>
+       <rank season="3" episode="2" league="bronze">1</rank>
+    </champs>
+    <favorite_league>challenger</favorite_league>
+    <experience type_experience="feeding">yes</experience>
+    <experience type_experience="flaming">no</experience>
+    <newbie>no</newbie>
+    <paysafe>yes</paysafe>
+    <server>usa</server>
+    <language type_language="main">english</language>
+    <skins>yes</skins>
+    <insult>Dumb</insult>
+    <status>online</status>
+    <internet_connection>lan</internet_connection>
+    <provider>O2</provider>  
+  </player>
+
+  <player id="3">
+    <nickname>Mosaik</nickname>
+    <real_name>Petr Biely</real_name>
+    <date_of_birth>1986-04-11</date_of_birth>
+    <favourite_post>bottom</favourite_post>
+    <number_of_friends_in_friendlist>5</number_of_friends_in_friendlist>
+    <Signature_text>Co ti sibe</Signature_text>
+    <gender>man</gender>
+    <age>18</age>
+    <height>195 cm</height>
+    <weight>110 Kg</weight>
+    <hometown type_hometown="permanent">
+      <state>Slovakia</state>
+      <city>Bratislava</city>
+      <street>Podhobkova</street>
+      <house_number>11</house_number>
+      <city_number></city_number>
+      <zip_code>74010</zip_code>
+    </hometown>
+    <family>
+      <name name_family="father">Jan Biely</name>
+      <name name_family="mother">Martina Kenklova</name>      
+    </family>
+    <favorite_champion champion="monkey">wukong</favorite_champion>
+    <champs champs_type="top" id_champ="112">
+      <rank season="1" episode="3" league="bronze">2</rank>
+       <rank season="2" episode="2" league="silver">1</rank>
+    </champs>
+    <favorite_league>gold</favorite_league>
+    <experience type_experience="feeding">no</experience>
+    <experience type_experience="flaming">yes</experience>
+    <newbie>yes</newbie>
+    <paysafe>yes</paysafe>
+    <server>europe</server>
+    <language type_language="second">english</language>
+    <skins>yes</skins>
+    <insult>Cobole</insult>
+    <status>offline</status>
+    <internet_connection>LAN</internet_connection>
+    <provider>Orange</provider>  
+  </player>
+
+  <player id="4">
+    <nickname>Tosaxxyo</nickname>
+    <real_name>Robert Obeidat</real_name>
+    <date_of_birth>1991-05-12</date_of_birth>
+    <favourite_post>bottom</favourite_post>
+    <number_of_friends_in_friendlist>52</number_of_friends_in_friendlist>
+    <Signature_text>Examssss</Signature_text>
+    <gender>man</gender>
+    <age>22</age>
+    <height>170 cm</height>
+    <weight>80 Kg</weight>
+    <hometown type_hometown="permanent">
+      <state>Czech Republic</state>
+      <city>Prague</city>
+      <street>Ostromecska</street>
+      <house_number>104/14</house_number>
+      <city_number>3</city_number>
+      <zip_code>13000</zip_code>
+    </hometown>
+    <family>
+      <name name_family="father">Martin Obeidat</name>
+      <name name_family="mother">Pavla Obeidatova</name>      
+    </family>
+    <favorite_champion champion="metro">ezreal</favorite_champion>
+    <champs champs_type="bottom" id_champ="107">
+      <rank season="1" episode="3" league="bronze">4</rank>
+       <rank season="3" episode="1" league="gold">5</rank>
+    </champs>
+    <favorite_league>challenger</favorite_league>
+    <experience type_experience="feeding">no</experience>
+    <experience type_experience="flaming">yes</experience>
+    <newbie>no</newbie>
+    <paysafe>yes</paysafe>
+    <server>europe</server>
+    <language type_language="main">czech</language>
+    <skins>No</skins>
+    <insult>feeder</insult>
+    <status>offline</status>
+    <internet_connection>wireless</internet_connection>
+    <provider>T-mobile</provider>  
+  </player>
+
+  <player id="5">
+    <nickname>Liblin</nickname>
+    <real_name>Libor Chmel</real_name>
+    <date_of_birth>1991-02-15</date_of_birth>
+    <favourite_post>middle</favourite_post>
+    <number_of_friends_in_friendlist>78</number_of_friends_in_friendlist>
+    <Signature_text>Ono to pujde, chlapi</Signature_text>
+    <gender>man</gender>
+    <age>22</age>
+    <height>178 cm</height>
+    <weight>93 Kg</weight>
+    <hometown type_hometown="permanent">
+      <state>Czech Republic</state>
+      <city>Kourim</city>
+      <street>Okruzni</street>
+      <house_number>11</house_number>
+      <city_number>2</city_number>
+      <zip_code>28161</zip_code>
+    </hometown>
+    <family>
+      <name name_family="father">Tomas Chmel</name>
+      <name name_family="mother">Jana Chmelova</name>      
+    </family>
+    <favorite_champion champion="blanc">LeBlanc</favorite_champion>
+    <champs champs_type="middle" id_champ="101">
+      <rank season="1" episode="3" league="bronze">2</rank>
+       <rank season="2" episode="2" league="silver">2</rank>
+    </champs>
+    <favorite_league>gold</favorite_league>
+    <experience type_experience="feeding">yes</experience>
+    <experience type_experience="flaming">no</experience>
+    <newbie>yes</newbie>
+    <paysafe>yes</paysafe>
+    <server>usa</server>
+    <language type_language="main">czech</language>
+    <skins>Yes</skins>
+    <insult>Lamo</insult>
+    <status>offline</status>
+    <internet_connection>wireless</internet_connection>
+    <provider>Omega Plus</provider>  
+  </player>
+
+</league_players>
